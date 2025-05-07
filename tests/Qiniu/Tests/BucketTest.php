@@ -3,7 +3,6 @@
 namespace Qiniu\Tests;
 
 use PHPUnit\Framework\TestCase;
-
 use Qiniu\Config;
 use Qiniu\Storage\BucketManager;
 

@@ -4,8 +4,6 @@ namespace Qiniu\Storage;
 use Qiniu\Config;
 use Qiniu\Http\HttpClient;
 use Qiniu\Http\RequestOptions;
-use Qiniu\Storage\ResumeUploader;
-use Qiniu\Storage\FormUploader;
 
 /**
  * 主要涉及了资源上传接口的实现

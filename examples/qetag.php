@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/../autoload.php';
+
 use Qiniu\Etag;
 
 // 计算文件的 ETag

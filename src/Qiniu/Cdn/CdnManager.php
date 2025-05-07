@@ -3,8 +3,8 @@
 namespace Qiniu\Cdn;
 
 use Qiniu\Auth;
-use Qiniu\Http\Error;
 use Qiniu\Http\Client;
+use Qiniu\Http\Error;
 use Qiniu\Http\Proxy;
 
 final class CdnManager

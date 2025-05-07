@@ -3,8 +3,6 @@ namespace Qiniu\Tests;
 
 use PHPUnit\Framework\TestCase;
 
-use Qiniu;
-
 class Crc32Test extends TestCase
 {
     public function testData()

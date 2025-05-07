@@ -3,7 +3,6 @@
 namespace Qiniu;
 
 use Qiniu\Http\Header;
-use Qiniu\Zone;
 
 final class Auth
 {

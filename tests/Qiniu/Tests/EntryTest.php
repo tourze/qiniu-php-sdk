@@ -2,7 +2,6 @@
 namespace Qiniu\Tests;
 
 use PHPUnit\Framework\TestCase;
-
 use Qiniu;
 
 class EntryTest extends TestCase

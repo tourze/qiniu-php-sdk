@@ -2,8 +2,6 @@
 
 namespace Qiniu\Processing;
 
-use Qiniu;
-
 /**
  * 主要涉及图片链接拼接
  *

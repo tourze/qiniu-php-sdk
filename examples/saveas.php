@@ -1,9 +1,6 @@
 <?php
 require_once __DIR__ . '/../autoload.php';
 
-use Qiniu\Auth;
-use Qiniu\Processing\PersistentFop;
-
 // 控制台获取密钥：https://portal.qiniu.com/user/key
 $accessKey = getenv('QINIU_ACCESS_KEY');
 $secretKey = getenv('QINIU_SECRET_KEY');

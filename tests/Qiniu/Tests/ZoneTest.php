@@ -2,8 +2,6 @@
 namespace Qiniu\Tests;
 
 use PHPUnit\Framework\TestCase;
-
-use Qiniu;
 use Qiniu\Zone;
 
 class ZoneTest extends TestCase

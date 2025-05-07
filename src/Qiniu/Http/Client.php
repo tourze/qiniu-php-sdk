@@ -3,7 +3,6 @@
 namespace Qiniu\Http;
 
 use Qiniu\Config;
-use Qiniu\Http\Middleware;
 
 final class Client
 {

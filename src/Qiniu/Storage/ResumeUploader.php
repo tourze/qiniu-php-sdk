@@ -3,9 +3,9 @@
 namespace Qiniu\Storage;
 
 use Qiniu\Config;
+use Qiniu\Enum\SplitUploadVersion;
 use Qiniu\Http\Client;
 use Qiniu\Http\Error;
-use Qiniu\Enum\SplitUploadVersion;
 use Qiniu\Http\RequestOptions;
 
 /**

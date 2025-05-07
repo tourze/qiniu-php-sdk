@@ -2,8 +2,6 @@
 
 namespace Qiniu;
 
-use Qiniu\Config;
-
 final class Etag
 {
     private static function packArray($v, $a)

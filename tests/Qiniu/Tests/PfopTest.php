@@ -2,7 +2,6 @@
 namespace Qiniu\Tests;
 
 use PHPUnit\Framework\TestCase;
-
 use Qiniu\Auth;
 use Qiniu\Processing\PersistentFop;
 use Qiniu\Storage\UploadManager;

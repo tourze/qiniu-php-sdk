@@ -9,7 +9,6 @@
 namespace Qiniu\Tests;
 
 use PHPUnit\Framework\TestCase;
-
 use Qiniu\Cdn\CdnManager;
 use Qiniu\Http\Client;
 

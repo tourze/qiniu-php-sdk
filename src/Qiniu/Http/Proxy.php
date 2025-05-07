@@ -2,8 +2,6 @@
 
 namespace Qiniu\Http;
 
-use Qiniu\Http\RequestOptions;
-
 final class Proxy
 {
     private $proxy;

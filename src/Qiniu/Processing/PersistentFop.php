@@ -3,10 +3,9 @@
 namespace Qiniu\Processing;
 
 use Qiniu\Config;
-use Qiniu\Http\Error;
 use Qiniu\Http\Client;
+use Qiniu\Http\Error;
 use Qiniu\Http\Proxy;
-use Qiniu\Zone;
 
 /**
  * 持久化处理类,该类用于主动触发异步持久化操作.

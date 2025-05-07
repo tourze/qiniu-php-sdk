@@ -4,7 +4,6 @@ namespace Qiniu\Storage;
 
 use Qiniu\Auth;
 use Qiniu\Config;
-use Qiniu\Zone;
 use Qiniu\Http\Client;
 use Qiniu\Http\Error;
 use Qiniu\Http\Proxy;

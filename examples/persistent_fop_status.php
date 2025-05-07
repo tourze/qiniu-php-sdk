@@ -1,8 +1,6 @@
 <?php
 require_once __DIR__ . '/../autoload.php';
 
-use Qiniu\Processing\PersistentFop;
-
 $pfop = new Qiniu\Processing\PersistentFop(null, null);
 
 // 通过 persistentId 来主动查询持久化处理(prefop)的执行状态

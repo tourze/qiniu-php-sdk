@@ -3,8 +3,8 @@
 namespace Qiniu\Storage;
 
 use Qiniu\Config;
-use Qiniu\Http\Error;
 use Qiniu\Http\Client;
+use Qiniu\Http\Error;
 use Qiniu\Http\RequestOptions;
 
 final class FormUploader

@@ -2,12 +2,11 @@
 namespace Qiniu\Tests;
 
 use PHPUnit\Framework\TestCase;
-
+use Qiniu\Config;
 use Qiniu\Http\RequestOptions;
 use Qiniu\Storage\BucketManager;
 use Qiniu\Storage\FormUploader;
 use Qiniu\Storage\UploadManager;
-use Qiniu\Config;
 
 class FormUpTest extends TestCase
 {

@@ -2,7 +2,6 @@
 namespace Qiniu\Tests;
 
 use PHPUnit\Framework\TestCase;
-
 use Qiniu\Http\Client;
 use Qiniu\Http\RequestOptions;
 use Qiniu\Http\Response;

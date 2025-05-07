@@ -3,9 +3,9 @@ require_once __DIR__ . '/../autoload.php';
 
 // 引入鉴权类
 use Qiniu\Auth;
+use Qiniu\Storage\UploadManager;
 
 // 引入上传类
-use Qiniu\Storage\UploadManager;
 
 // 控制台获取密钥：https://portal.qiniu.com/user/key
 $accessKey = getenv('QINIU_ACCESS_KEY');

@@ -2,12 +2,11 @@
 namespace Qiniu\Tests;
 
 use PHPUnit\Framework\TestCase;
-
+use Qiniu\Config;
+use Qiniu\Http\Client;
 use Qiniu\Http\RequestOptions;
 use Qiniu\Storage\BucketManager;
 use Qiniu\Storage\UploadManager;
-use Qiniu\Http\Client;
-use Qiniu\Config;
 
 class ResumeUpTest extends TestCase
 {

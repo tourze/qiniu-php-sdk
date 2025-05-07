@@ -11,8 +11,8 @@ namespace Qiniu {
 }
 
 namespace Qiniu\Tests {
-    use PHPUnit\Framework\TestCase;
 
+    use PHPUnit\Framework\TestCase;
     use Qiniu\Auth;
     use Qiniu\Http\Header;
 

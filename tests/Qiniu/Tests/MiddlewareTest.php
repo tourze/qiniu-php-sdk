@@ -5,10 +5,9 @@
 namespace Qiniu\Tests;
 
 use PHPUnit\Framework\TestCase;
-
 use Qiniu\Http\Client;
-use Qiniu\Http\Request;
 use Qiniu\Http\Middleware;
+use Qiniu\Http\Request;
 use Qiniu\Http\RequestOptions;
 
 class RecorderMiddleware implements Middleware\Middleware

@@ -4,8 +4,8 @@ namespace Qiniu\Rtc;
 
 use Qiniu\Auth;
 use Qiniu\Config;
-use Qiniu\Http\Error;
 use Qiniu\Http\Client;
+use Qiniu\Http\Error;
 use Qiniu\Http\Proxy;
 
 class AppClient
