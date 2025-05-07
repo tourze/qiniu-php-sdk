@@ -15,7 +15,7 @@
 推荐使用 `composer` 进行安装。可以使用 composer.json 声明依赖，或者运行下面的命令。SDK 包已经放到这里 [`qiniu/php-sdk`][install-packagist] 。
 
 ```bash
-$ composer require qiniu/php-sdk
+$ composer require tourze/qiniu-php-sdk
 ```
 
 ## 运行环境
