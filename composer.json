@@ -1,43 +1,44 @@
 {
-    "name": "tourze/qiniu-php-sdk",
-    "type": "library",
-    "description": "Qiniu Resource (Cloud) Storage SDK for PHP",
-    "keywords": [
-        "qiniu",
-        "storage",
-        "sdk",
-        "cloud"
-    ],
-    "homepage": "http://developer.qiniu.com/",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Qiniu",
-            "email": "sdk@qiniu.com",
-            "homepage": "http://www.qiniu.com"
-        }
-    ],
-    "require": {
-        "php": "^8.1",
-        "ext-xml": "*",
-        "ext-curl": "*",
-        "myclabs/php-enum": "~1.5.2 || ~1.6.6 || ~1.7.7 || ~1.8.4"
-    },
-    "require-dev": {
-        "paragonie/random_compat": ">=2",
-        "phpunit/phpunit": "^10.0",
-        "squizlabs/php_codesniffer": "^2.3 || ~3.6"
-    },
-    "autoload": {
-        "psr-4": {
-            "Qiniu\\": "src/Qiniu"
-        },
-        "files": [
-            "src/Qiniu/functions.php",
-            "src/Qiniu/Http/Middleware/Middleware.php"
-        ]
-    },
-    "replace": {
-        "qiniu/php-sdk": "*"
+  "name": "tourze/qiniu-php-sdk",
+  "description": "Qiniu Resource (Cloud) Storage SDK for PHP",
+  "type": "library",
+  "keywords": [
+    "qiniu",
+    "storage",
+    "sdk",
+    "cloud"
+  ],
+  "homepage": "http://developer.qiniu.com/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Qiniu",
+      "email": "sdk@qiniu.com",
+      "homepage": "http://www.qiniu.com"
     }
+  ],
+  "require": {
+    "php": "^8.1",
+    "ext-curl": "*",
+    "ext-xml": "*",
+    "myclabs/php-enum": "~1.5.2 || ~1.6.6 || ~1.7.7 || ~1.8.4"
+  },
+  "require-dev": {
+    "paragonie/random_compat": ">=2",
+    "phpstan/phpstan": "^2.1",
+    "phpunit/phpunit": "^10.0",
+    "squizlabs/php_codesniffer": "^2.3 || ~3.6"
+  },
+  "replace": {
+    "qiniu/php-sdk": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Qiniu\\": "src/Qiniu"
+    },
+    "files": [
+      "src/Qiniu/functions.php",
+      "src/Qiniu/Http/Middleware/Middleware.php"
+    ]
+  }
 }
