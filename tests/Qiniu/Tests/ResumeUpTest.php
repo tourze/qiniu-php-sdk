@@ -325,7 +325,7 @@ class ResumeUpTest extends TestCase
                     $invalidVersion,
                     $partSize
                 );
-            } catch (\Throwable $e) {
+            } catch  (\Throwable $e) {
                 $isRightException = false;
                 $expectExceptionCount++;
                 while ($e) {

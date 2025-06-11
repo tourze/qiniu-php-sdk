@@ -88,7 +88,7 @@ final class ResumeUploader
 
         try {
             $this->version = SplitUploadVersion::from($version ? $version : 'v1');
-        } catch (\Throwable $e) {
+        } catch  (\Throwable $e) {
             throw new \Exception("only support v1/v2 now!", 0, $e);
         }
 

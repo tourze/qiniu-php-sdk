@@ -28,7 +28,7 @@ namespace Qiniu\Tests {
             $apiHost = '';
             try {
                 $apiHost = $conf->getApiHost($this->accessKey, $this->bucketName);
-            } catch (\Throwable $e) {
+            } catch  (\Throwable $e) {
                 $hasException = true;
             }
             $this->assertFalse($hasException);
@@ -40,7 +40,7 @@ namespace Qiniu\Tests {
             $hasException = false;
             try {
                 $conf->getApiHost($this->accessKey, "fakebucket");
-            } catch (\Throwable $e) {
+            } catch  (\Throwable $e) {
                 $hasException = true;
             }
             $this->assertTrue($hasException);
