@@ -177,7 +177,7 @@ class PfopTest extends TestCase
                 $bucket,
                 $key
             );
-        } catch (\Exception $e) {
+        } catch (\Throwable $e) {
             $err = $e;
         }
 
