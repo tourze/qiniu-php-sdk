@@ -16,3 +16,5 @@ vendor
 *.log
 *.phar
 *.zip
+.env
+.env.local

@@ -59,3 +59,27 @@ function qiniuTempFile($size, $randomized = true)
     fclose($file);
     return $fileName;
 }
+
+// Ensure global variables are properly accessible in namespaced test files
+// This is needed because test files declare multiple namespaces which can cause
+// global variable scoping issues in PHP
+$GLOBALS['accessKey'] = $accessKey;
+$GLOBALS['secretKey'] = $secretKey;
+$GLOBALS['testAuth'] = $testAuth;
+$GLOBALS['dummyAuth'] = $dummyAuth;
+$GLOBALS['bucketName'] = $bucketName;
+$GLOBALS['key'] = $key;
+$GLOBALS['key2'] = $key2;
+$GLOBALS['testStartDate'] = $testStartDate;
+$GLOBALS['testEndDate'] = $testEndDate;
+$GLOBALS['testGranularity'] = $testGranularity;
+$GLOBALS['testLogDate'] = $testLogDate;
+$GLOBALS['bucketNameBC'] = $bucketNameBC;
+$GLOBALS['bucketNameNA'] = $bucketNameNA;
+$GLOBALS['bucketNameFS'] = $bucketNameFS;
+$GLOBALS['bucketNameAS'] = $bucketNameAS;
+$GLOBALS['timestampAntiLeechEncryptKey'] = $timestampAntiLeechEncryptKey;
+$GLOBALS['customDomain'] = $customDomain;
+$GLOBALS['customDomain2'] = $customDomain2;
+$GLOBALS['customCallbackURL'] = $customCallbackURL;
+$GLOBALS['tid'] = $tid;
