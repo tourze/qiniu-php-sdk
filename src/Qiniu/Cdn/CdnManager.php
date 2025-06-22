@@ -241,14 +241,14 @@ final class CdnManager
      *
      * @param string $rawUrl 需要签名的资源url
      * @param string $encryptKey 时间戳防盗链密钥
-     * @param string $durationInSeconds 链接的有效期（以秒为单位）
+     * @param int $durationInSeconds 链接的有效期（以秒为单位）
      *
      * @return string 带鉴权信息的资源外链，参考 examples/cdn_timestamp_antileech.php 代码
      */
     public static function createTimestampAntiLeechUrl($rawUrl, $encryptKey, $durationInSeconds)
     {
         $parsedUrl = parse_url($rawUrl);
-        $deadline = time() + $durationInSeconds;
+        $deadline = time() + (int)$durationInSeconds;
         $expireHex = dechex($deadline);
         $path = isset($parsedUrl['path']) ? $parsedUrl['path'] : '';
         $strToSign = $encryptKey . $path . $expireHex;

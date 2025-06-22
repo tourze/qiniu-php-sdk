@@ -21,7 +21,7 @@ final class Client
     /**
      * @param $url
      * @param array $headers
-     * @param array $opt detail see {@see Request::$opt}
+     * @param RequestOptions|null $opt detail see {@see Request::$opt}
      * @return Response
      */
     public static function delete($url, array $headers = array(), $opt = null)

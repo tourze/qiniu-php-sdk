@@ -649,7 +649,7 @@ class BucketTest extends TestCase
 
     public function testPutBucketQuota()
     {
-        list(, $err) = self::$bucketManager->putBucketQuota(self::$bucketName, -1, -1);
+        list(, $err) = self::$bucketManager->putBucketQuota(self::$bucketName, '-1', '-1');
         $this->assertNull($err);
     }
 

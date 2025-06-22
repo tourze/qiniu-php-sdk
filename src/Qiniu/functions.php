@@ -66,7 +66,7 @@ if (!defined('QINIU_FUNCTIONS_VERSION')) {
      * 二维数组根据某个字段排序
      * @param array $array 要排序的数组
      * @param string $key 要排序的键
-     * @param string $sort  排序类型 SORT_ASC SORT_DESC
+     * @param int $sort  排序类型 SORT_ASC SORT_DESC
      * return array 排序后的数组
      */
     function arraySort($array, $key, $sort = SORT_ASC)
@@ -153,7 +153,7 @@ if (!defined('QINIU_FUNCTIONS_VERSION')) {
      *
      * @param array $array 待操作array
      * @param string $key key
-     * @param string $value value 为null时 不设置
+     * @param mixed $value value 为null时 不设置
      *
      * @return array 原来的array，便于连续操作
      */

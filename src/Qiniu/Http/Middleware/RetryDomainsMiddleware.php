@@ -67,7 +67,7 @@ class RetryDomainsMiddleware implements Middleware
             }
         }
 
-        if (!$response) {
+        if ($response === null) {
             $response = $next($request);
         }
 

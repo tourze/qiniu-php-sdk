@@ -372,7 +372,7 @@ class Sms
     {
         $headers = $this->auth->authorizationV2($url, "PUT", $body, $contentType);
         $headers['Content-Type'] = $contentType;
-        $ret = Client::put($url, $body, $headers, $this->proxy->makeReqOpt());
+        $ret = Client::PUT($url, $body, $headers, $this->proxy->makeReqOpt());
         if (!$ret->ok()) {
             return array(null, new Error($url, $ret));
         }

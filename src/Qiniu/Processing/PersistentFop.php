@@ -15,17 +15,17 @@ use Qiniu\Http\Proxy;
 final class PersistentFop
 {
     /**
-     * @var 账号管理密钥对，Auth对象
+     * @var \Qiniu\Auth 账号管理密钥对，Auth对象
      */
     private $auth;
 
-    /*
-     * @var 配置对象，Config 对象
-     * */
+    /**
+     * @var Config 配置对象，Config 对象
+     */
     private $config;
 
     /**
-     * @var 代理信息
+     * @var Proxy 代理信息
      */
     private $proxy;
 
@@ -71,7 +71,7 @@ final class PersistentFop
             $fops = implode(';', $fops);
         }
 
-        if (!$fops && !$workflow_template_id) {
+        if (empty($fops) && empty($workflow_template_id)) {
             throw new \InvalidArgumentException('Must provide one of fops or template_id');
         }
 

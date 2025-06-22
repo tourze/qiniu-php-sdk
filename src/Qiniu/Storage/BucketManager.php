@@ -247,28 +247,28 @@ final class BucketManager
     ) {
         $path = '/rules/add';
         $params = array();
-        if ($bucket) {
+        if ($bucket !== '') {
             $params['bucket'] = $bucket;
         }
-        if ($name) {
+        if ($name !== '') {
             $params['name'] = $name;
         }
-        if ($prefix) {
+        if ($prefix !== null && $prefix !== '') {
             $params['prefix'] = $prefix;
         }
-        if ($delete_after_days) {
+        if ($delete_after_days !== null) {
             $params['delete_after_days'] = $delete_after_days;
         }
-        if ($to_line_after_days) {
+        if ($to_line_after_days !== null) {
             $params['to_line_after_days'] = $to_line_after_days;
         }
-        if ($to_archive_ir_after_days) {
+        if ($to_archive_ir_after_days !== null) {
             $params['to_archive_ir_after_days'] = $to_archive_ir_after_days;
         }
-        if ($to_archive_after_days) {
+        if ($to_archive_after_days !== null) {
             $params['to_archive_after_days'] = $to_archive_after_days;
         }
-        if ($to_deep_archive_after_days) {
+        if ($to_deep_archive_after_days !== null) {
             $params['to_deep_archive_after_days'] = $to_deep_archive_after_days;
         }
         $data = http_build_query($params);

@@ -85,7 +85,6 @@ class ImageUrlBuilderTest extends TestCase
      * 图片水印测试
      *
      * @test
-     * @param  void
      * @return void
      * @author Sherlock Ren <sherlock_ren@icloud.com>
      */

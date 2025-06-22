@@ -154,8 +154,7 @@ namespace Qiniu\Tests {
                     "url" => "http://upload.qiniup.com",
                     "method" => "",
                     "headers" => array(
-                        "Content-Type" => array("application/x-www"),
-                        "Content-Type" => array("application/x-www-form-urlencoded"),
+                        "Content-Type" => array("application/x-www", "application/x-www-form-urlencoded"),
                         "X-Qiniu-Bbb" => array("BBB", "AAA"),
                         "X-Qiniu-Aaa" => array("DDD", "CCC"),
                     ),

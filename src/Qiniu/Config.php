@@ -338,13 +338,13 @@ final class Config
      */
     private function getRegion($accessKey, $bucket, $reqOpt = null)
     {
-        if (isset($this->zone)) {
+        if ($this->zone !== null) {
             return $this->zone;
         }
 
         $cacheId = "$accessKey:$bucket";
         $regionCache = $this->getRegionCache($cacheId);
-        if ($regionCache) {
+        if ($regionCache !== null) {
             return $regionCache;
         }
 
@@ -369,7 +369,7 @@ final class Config
 
     private function getRegionV2($accessKey, $bucket, $reqOpt = null)
     {
-        if (isset($this->zone)) {
+        if ($this->zone !== null) {
             return array($this->zone, null);
         }
 

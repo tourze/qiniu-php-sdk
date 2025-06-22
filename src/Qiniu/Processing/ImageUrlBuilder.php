@@ -76,7 +76,7 @@ final class ImageUrlBuilder
             return $url;
         }
 
-        if (!$width || !$height) {
+        if ($width === 0 || $height === 0) {
             return $url;
         }
 
@@ -185,7 +185,7 @@ final class ImageUrlBuilder
      * @param string $url 图片链接
      * @param string $text 文字
      * @param string $font 文字字体
-     * @param string $fontSize 文字字号
+     * @param int $fontSize 文字字号
      * @param string $fontColor 文字颜色
      * @param int $dissolve 透明度
      * @param string $gravity 水印位置
@@ -222,7 +222,7 @@ final class ImageUrlBuilder
 
         // 拼接文字颜色
         if (!is_null($fontColor)
-            && $fontColor
+            && $fontColor !== ''
         ) {
             $waterStr .= 'fill/' . \Qiniu\base64_urlSafeEncode($fontColor) . '/';
         }
@@ -261,24 +261,24 @@ final class ImageUrlBuilder
      * 效验url合法性
      *
      * @param string $url url链接
-     * @return string
+     * @return bool
      * @author Sherlock Ren <sherlock_ren@icloud.com>
      */
     protected function isUrl($url)
     {
         $urlArr = parse_url($url);
 
-        return $urlArr['scheme']
+        return isset($urlArr['scheme'])
             && in_array($urlArr['scheme'], array('http', 'https'))
-            && $urlArr['host']
-            && $urlArr['path'];
+            && isset($urlArr['host'])
+            && isset($urlArr['path']);
     }
 
     /**
      * 检测是否有query
      *
      * @param string $url url链接
-     * @return string
+     * @return bool
      * @author Sherlock Ren <sherlock_ren@icloud.com>
      */
     protected function hasQuery($url)

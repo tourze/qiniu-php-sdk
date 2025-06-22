@@ -80,7 +80,7 @@ class HttpTest extends TestCase
 
     public function testPostQiniu()
     {
-        $response = Client::post('upload.qiniu.com', null);
+        $response = Client::post('https://upload.qiniu.com', null);
         $this->assertEquals(400, $response->statusCode);
         $this->assertNotNull($response->body);
         $this->assertNotNull($response->xReqId());
@@ -100,17 +100,17 @@ class HttpTest extends TestCase
     {
         $reqOpt = new RequestOptions();
         $reqOpt->proxy = 'socks5://localhost:8080';
-        $response = Client::post('qiniu.com', null, array(), $reqOpt);
+        $response = Client::post('https://qiniu.com', null, array(), $reqOpt);
         $this->assertEquals(-1, $response->statusCode);
 
         $reqOpt->proxy_user_password = 'user:pass';
-        $response = Client::post('qiniu.com', null, array(), $reqOpt);
+        $response = Client::post('https://qiniu.com', null, array(), $reqOpt);
         $this->assertEquals(200, $response->statusCode);
     }
 
     public function testPut()
     {
-        $response = Client::PUT('uc.qbox.me/bucketTagging', null);
+        $response = Client::PUT('https://uc.qbox.me/bucketTagging', null);
         $this->assertEquals(401, $response->statusCode);
         $this->assertNotNull($response->body);
         $this->assertNotNull($response->error);

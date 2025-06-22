@@ -86,8 +86,8 @@ final class UploadManager
      * @param string $filePath 上传文件的路径
      * @param array<string, mixed> $params 定义变量，规格参考
      *                                     http://developer.qiniu.com/docs/v6/api/overview/up/response/vars.html#xvar
-     * @param boolean $mime 上传数据的mimeType
-     * @param string $checkCrc 是否校验crc32
+     * @param string $mime 上传数据的mimeType
+     * @param boolean $checkCrc 是否校验crc32
      * @param string $resumeRecordFile 断点续传文件路径 默认为null
      * @param string $version 分片上传版本 目前支持v1/v2版本 默认v1
      * @param int $partSize 分片上传v2字段 默认大小为4MB 分片大小范围为1 MB - 1 GB

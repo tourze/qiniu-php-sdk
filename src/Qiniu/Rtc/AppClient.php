@@ -168,7 +168,7 @@ class AppClient
         if (isset($limit)) {
             $query['limit'] = $limit;
         }
-        if (isset($query) && !empty($query)) {
+        if (!empty($query)) {
             $query = '?' . http_build_query($query);
             $url = sprintf("%s/%s/rooms%s", $this->baseURL, $appId, $query);
         } else {

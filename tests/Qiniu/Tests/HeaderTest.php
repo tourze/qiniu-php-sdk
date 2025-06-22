@@ -153,7 +153,7 @@ class HeaderTest extends TestCase
         $hasException = false;
         try {
             foreach ($emptyHeader as $k => $v) {
-                $hasException = !isset($header[$k]);
+                $hasException = !isset($emptyHeader[$k]);
             }
         } catch (\Throwable $e) {
             $hasException = true;

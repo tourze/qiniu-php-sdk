@@ -35,4 +35,9 @@ final class Error
     {
         return $this->response->error;
     }
+
+    public function getUrl()
+    {
+        return $this->url;
+    }
 }

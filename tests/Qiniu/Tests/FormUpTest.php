@@ -52,7 +52,7 @@ class FormUpTest extends TestCase
     {
         $key = self::getObjectKey('formput');
         $token = self::$auth->uploadToken(self::$bucketName);
-        list($ret, $error) = FormUploader::put($token, $key, 'hello world', self::$cfg, null, 'text/plain', null);
+        list($ret, $error) = FormUploader::put($token, $key, 'hello world', self::$cfg, null, 'text/plain', 'test.txt');
         $this->assertNull($error);
         $this->assertNotNull($ret['hash']);
     }

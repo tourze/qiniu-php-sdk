@@ -33,7 +33,6 @@ class Header implements \ArrayAccess, \IteratorAggregate, \Countable
             }
             $this->data[$normalizedKey] = $normalizedValues;
         }
-        return $this;
     }
 
     /**
@@ -138,7 +137,7 @@ class Header implements \ArrayAccess, \IteratorAggregate, \Countable
     public function offsetGet($offset)
     {
         $key = self::normalizeKey($offset);
-        if (isset($this->data[$key]) && count($this->data[$key])) {
+        if (isset($this->data[$key]) && count($this->data[$key]) > 0) {
             return $this->data[$key][0];
         } else {
             return null;
@@ -186,7 +185,7 @@ class Header implements \ArrayAccess, \IteratorAggregate, \Countable
     }
 
     /**
-     * @return int
+     * @return int<0, max>
      */
     #[\ReturnTypeWillChange] // temporarily suppress the type check of php 8.x
     public function count()

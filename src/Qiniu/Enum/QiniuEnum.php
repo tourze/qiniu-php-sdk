@@ -25,7 +25,7 @@ if (method_exists("MyCLabs\\Enum\\Enum", "from")) {
          * @param mixed $value
          * @return static
          */
-        public static function from($value)
+        public static function from($value): Enum
         {
             $key = self::assertValidValueReturningKey($value);
 
@@ -36,7 +36,6 @@ if (method_exists("MyCLabs\\Enum\\Enum", "from")) {
          * Asserts valid enum value
          *
          * @psalm-pure
-         * @psalm-assert T $value
          * @param mixed $value
          * @return string
          */
